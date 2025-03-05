@@ -32,6 +32,38 @@
 $ yarn install
 ```
 
+## Setup Environment
+
+Create a `.env` file in the root directory of your project and add the following environment variables:
+
+```plaintext
+PORT=8080
+
+DEFAULT_DB_HOST=localhost
+DEFAULT_DB_PORT=3306
+DEFAULT_DB_USERNAME=your_username
+DEFAULT_DB_PASSWORD=your_password
+DEFAULT_DB_NAME=your_database
+
+SECONDARY_DB_HOST=localhost
+SECONDARY_DB_PORT=3306
+SECONDARY_DB_USERNAME=your_username
+SECONDARY_DB_PASSWORD=your_password
+SECONDARY_DB_NAME=your_database
+
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=your_password
+REDIS_URL=redis://localhost
+
+JWT_SECRET=s3cr3t
+JWT_EXPIRES_IN=1h
+JWT_REFRESH_SECRET=s3cr3t_refresh
+JWT_REFRESH_EXPIRES_IN=1d
+```
+
+Replace `your_username`, `your_password`, and `your_database` with your actual database credentials.
+
 ## Compile and run the project
 
 ```bash
